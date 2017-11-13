@@ -9,6 +9,9 @@ import (
 	"os/user"
 	"path/filepath"
 	"strings"
+
+	"github.com/go-yaml/yaml"
+	"github.com/x4m/wal-g/internal/tracelog"
 )
 
 var (
