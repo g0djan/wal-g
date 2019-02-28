@@ -2,8 +2,8 @@ package test
 
 import (
 	"github.com/stretchr/testify/assert"
-	"github.com/x4m/wal-g/internal"
-	"github.com/x4m/wal-g/internal/walparser"
+	"github.com/g0djan/wal-g/internal"
+	"github.com/g0djan/wal-g/internal/walparser"
 	"testing"
 )
 

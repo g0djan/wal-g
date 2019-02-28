@@ -29,5 +29,5 @@ deploy:
   skip_cleanup: true
   file: wal-g.linux-amd64$BINSUFFIX.tar.gz
   on:
-    repo: x4m/wal-g
+    repo: g0djan/wal-g
     tags: true

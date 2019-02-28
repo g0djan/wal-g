@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"io/ioutil"
 	"io"
-	"github.com/x4m/wal-g/internal"
+	"github.com/g0djan/wal-g/internal"
 	"sync"
-	"github.com/x4m/wal-g/testtools"
+	"github.com/g0djan/wal-g/testtools"
 	"strconv"
 )
 

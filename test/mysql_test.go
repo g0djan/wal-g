@@ -3,9 +3,9 @@ package test
 import (
 	"testing"
 	"os"
-	"github.com/x4m/wal-g/internal"
+	"github.com/g0djan/wal-g/internal"
 	"github.com/stretchr/testify/assert"
-	"github.com/x4m/wal-g/testtools"
+	"github.com/g0djan/wal-g/testtools"
 	"bytes"
 	"time"
 )

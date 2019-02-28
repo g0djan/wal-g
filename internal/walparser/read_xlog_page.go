@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 	"github.com/pkg/errors"
-	"github.com/x4m/wal-g/internal/tracelog"
-	"github.com/x4m/wal-g/internal/walparser/parsingutil"
+	"github.com/g0djan/wal-g/internal/tracelog"
+	"github.com/g0djan/wal-g/internal/walparser/parsingutil"
 	"io"
 )
 

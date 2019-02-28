@@ -5,10 +5,10 @@ import (
 	"encoding/binary"
 	"fmt"
 	"github.com/pkg/errors"
-	"github.com/x4m/wal-g/internal/tracelog"
+	"github.com/g0djan/wal-g/internal/tracelog"
 	"io"
 	"io/ioutil"
-	"github.com/x4m/wal-g/internal/walparser/parsingutil"
+	"github.com/g0djan/wal-g/internal/walparser/parsingutil"
 )
 
 const (

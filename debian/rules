@@ -5,7 +5,7 @@
 #export DH_VERBOSE=1
 
 export DH_OPTIONS
-export DH_GOPKG := github.com/x4m/wal-g
+export DH_GOPKG := github.com/g0djan/wal-g
 
 override_dh_builddeb:
 	dh_builddeb -- -z9 -Zxz -Snone

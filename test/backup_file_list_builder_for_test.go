@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/x4m/wal-g/internal"
+	"github.com/g0djan/wal-g/internal"
 	"time"
 )
 

@@ -2,16 +2,13 @@ package internal
 
 import (
 	"encoding/json"
-	"github.com/go-yaml/yaml"
-	"github.com/wal-g/wal-g/internal/tracelog"
 	"io/ioutil"
 	"os"
 	"os/user"
 	"path/filepath"
 	"strings"
-
+	"github.com/g0djan/wal-g/internal/tracelog"
 	"github.com/go-yaml/yaml"
-	"github.com/x4m/wal-g/internal/tracelog"
 )
 
 var (
@@ -46,7 +43,7 @@ var (
 		"WALG_NETWORK_RATE_LIMIT":      nil,
 		"WALG_USE_WAL_DELTA":           nil,
 		"WALG_LOG_LEVEL":               nil,
-		
+
 
 		"WALG_MYSQL_DATASOURCE_NAME": nil,
 		"WALG_MYSQL_BINLOG_DST":      nil,

@@ -1,6 +1,6 @@
 # WAL-G
-[![Build Status](https://travis-ci.org/x4m/wal-g.svg?branch=master)](https://travis-ci.org/wal-g/wal-g)
-[![Go Report Card](https://goreportcard.com/badge/github.com/x4m/wal-g)](https://goreportcard.com/report/github.com/x4m/wal-g)
+[![Build Status](https://travis-ci.org/g0djan/wal-g.svg?branch=master)](https://travis-ci.org/wal-g/wal-g)
+[![Go Report Card](https://goreportcard.com/badge/github.com/g0djan/wal-g)](https://goreportcard.com/report/github.com/g0djan/wal-g)
 
 WAL-G is an archival restoration tool for Postgres.
 
@@ -19,7 +19,7 @@ WAL-G is the successor of WAL-E with a number of key differences. WAL-G uses LZ4
 
 Installation
 ----------
-A precompiled binary for Linux AMD 64 of the latest version of WAL-G can be obtained under the [Releases tab](https://github.com/x4m/wal-g/releases).
+A precompiled binary for Linux AMD 64 of the latest version of WAL-G can be obtained under the [Releases tab](https://github.com/g0djan/wal-g/releases).
 
 To decompress the binary, use:
 
@@ -44,7 +44,7 @@ WAL-G determines AWS credentials [like other AWS tools](http://docs.aws.amazon.c
 
 To store backups in Google Cloud Storage, WAL-G requires that this variable be set:
 
-* `WALG_GS_PREFIX` to specify where to store backups (eg. `gs://x4m-test-bucket/walg-folder`) 
+* `WALG_GS_PREFIX` to specify where to store backups (eg. `gs://g0djan-test-bucket/walg-folder`) 
 
 WAL-G determines Google Cloud credentials using [application-default credentials](https://cloud.google.com/docs/authentication/production) like other GCP tools. You can set `GOOGLE_APPLICATION_CREDENTIALS` to point to a service account json key from GCP. If you set nothing, WAL-G will attempt to fetch credentials from the GCE/GKE metadata service.
 
@@ -242,7 +242,7 @@ Development
 To compile and build the binary:
 
 ```
-go get github.com/x4m/wal-g
+go get github.com/g0djan/wal-g
 make deps
 make all
 ```

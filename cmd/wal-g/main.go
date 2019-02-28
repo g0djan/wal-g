@@ -4,11 +4,11 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/x4m/wal-g/internal"
+	"github.com/g0djan/wal-g/internal"
 	"log"
 	"os"
 	"runtime/pprof"
-	"github.com/x4m/wal-g/internal/tracelog"
+	"github.com/g0djan/wal-g/internal/tracelog"
 )
 
 var profile bool

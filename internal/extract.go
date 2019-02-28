@@ -5,7 +5,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/pkg/errors"
-	"github.com/x4m/wal-g/internal/tracelog"
+	"github.com/g0djan/wal-g/internal/tracelog"
 	"golang.org/x/sync/semaphore"
 	"io"
 	"strings"

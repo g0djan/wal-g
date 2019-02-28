@@ -4,13 +4,13 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/x4m/wal-g/internal"
+	"github.com/g0djan/wal-g/internal"
 )
 
 func TestGSFolder(t *testing.T) {
 	t.Skip("Credentials needed to run GCP tests")
 
-	storageFolder, err := internal.ConfigureGSFolder("gs://x4m-test/walg-bucket")
+	storageFolder, err := internal.ConfigureGSFolder("gs://g0djan-test/walg-bucket")
 
 	assert.NoError(t, err)
 

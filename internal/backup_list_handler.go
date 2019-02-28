@@ -2,7 +2,7 @@ package internal
 
 import (
 	"fmt"
-	"github.com/x4m/wal-g/internal/tracelog"
+	"github.com/g0djan/wal-g/internal/tracelog"
 	"os"
 	"text/tabwriter"
 	"time"

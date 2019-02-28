@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"fmt"
 	"github.com/pierrec/lz4"
-	"github.com/x4m/wal-g/internal"
+	"github.com/g0djan/wal-g/internal"
 	"io"
 	"os"
 	"path/filepath"

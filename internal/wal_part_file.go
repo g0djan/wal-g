@@ -2,7 +2,7 @@ package internal
 
 import (
 	"github.com/pkg/errors"
-	"github.com/x4m/wal-g/internal/walparser"
+	"github.com/g0djan/wal-g/internal/walparser"
 	"io"
 )
 

@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"github.com/pkg/errors"
-	"github.com/x4m/wal-g/internal/tracelog"
+	"github.com/g0djan/wal-g/internal/tracelog"
 	"io/ioutil"
 	"os"
 	"path/filepath"

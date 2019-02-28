@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"github.com/go-sql-driver/mysql"
 	"github.com/pkg/errors"
-	"github.com/x4m/wal-g/internal/tracelog"
+	"github.com/g0djan/wal-g/internal/tracelog"
 	"io"
 	"io/ioutil"
 	"os"
