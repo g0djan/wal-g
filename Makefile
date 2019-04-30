@@ -5,6 +5,7 @@ CMD_FILES = $(wildcard wal-g/*.go)
 PKG_FILES = $(wildcard internal/**/*.go internal/**/**/*.go internal/*.go)
 TEST_FILES = $(wildcard test/*.go testtools/*.go)
 PKG := github.com/wal-g/wal-g
+BUILD_NAME := wal-g
 
 .PHONY: unittest fmt lint install clean
 
@@ -17,7 +18,7 @@ test: install deps lint unittest pg_build mysql_build unlink_brotli pg_integrati
 pg_test: install deps pg_build lint unittest unlink_brotli pg_integration_test
 
 pg_build: $(CMD_FILES) $(PKG_FILES)
-	(cd $(MAIN_PG_PATH) && go build -o wal-g $(GOTAGS) -ldflags "-s -w -X github.com/wal-g/wal-g/cmd.BuildDate=`date -u +%Y.%m.%d_%H:%M:%S` -X github.com/wal-g/wal-g/cmd.GitRevision=`git rev-parse --short HEAD` -X github.com/wal-g/wal-g/cmd.WalgVersion=`git tag -l --points-at HEAD`")
+	(cd $(MAIN_PG_PATH) && go build -o $(BUILD_NAME) $(GOTAGS) -ldflags "-s -w -X github.com/wal-g/wal-g/cmd.BuildDate=`date -u +%Y.%m.%d_%H:%M:%S` -X github.com/wal-g/wal-g/cmd.GitRevision=`git rev-parse --short HEAD` -X github.com/wal-g/wal-g/cmd.WalgVersion=`git tag -l --points-at HEAD`")
 
 pg_integration_test:
 	docker-compose build $(DOCKER_COMMON) pg pg_tests
@@ -33,7 +34,7 @@ pg_install: pg_build
 mysql_test: install deps mysql_build lint unittest unlink_brotli mysql_integration_test
 
 mysql_build: $(CMD_FILES) $(PKG_FILES)
-	(cd $(MAIN_MYSQL_PATH) && go build -o wal-g $(GOTAGS) -ldflags "-s -w -X github.com/wal-g/wal-g/cmd.BuildDate=`date -u +%Y.%m.%d_%H:%M:%S` -X github.com/wal-g/wal-g/cmd.GitRevision=`git rev-parse --short HEAD` -X github.com/wal-g/wal-g/cmd.WalgVersion=`git tag -l --points-at HEAD`")
+	(cd $(MAIN_MYSQL_PATH) && go build -o $(BUILD_NAME) $(GOTAGS) -ldflags "-s -w -X github.com/wal-g/wal-g/cmd.BuildDate=`date -u +%Y.%m.%d_%H:%M:%S` -X github.com/wal-g/wal-g/cmd.GitRevision=`git rev-parse --short HEAD` -X github.com/wal-g/wal-g/cmd.WalgVersion=`git tag -l --points-at HEAD`")
 
 mysql_integration_test:
 	docker-compose build $(DOCKER_COMMON) mysql mysql_tests
